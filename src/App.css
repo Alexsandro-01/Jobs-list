@@ -13,13 +13,111 @@
 }
 
 .App {
-  text-align: center;
+  background-color: var(--LightGrayishCyan);
+  min-height: 100vh;
+  font-family: 'Spartan', sans-serif;
 }
 
 .App-header {
   background-color: var(--prymary);
   padding: 30px;
-  background-image: url('./images/bg-header-desktop.svg');
+  background-image: url('../public/images/bg-header-desktop.svg');
   background-size: cover;
   color: var(--LightGrayishCyan);
+  text-align: center;
+}
+
+.App-header div {
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
+  margin: 30px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* Component Card */
+.card span {
+  display: block;
+  padding: 4px;
+  font-size: 0.8em;
+}
+
+.card {
+  box-shadow: 0 10px 30px lightblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: var(--LightGrayishCyanTablets);
+  border-radius: 10px;
+  margin: 25px 0;
+}
+
+.card .job-info {
+  /* border: solid 1px red; */
+  display: flex;
+  align-items: center;
+}
+
+.card .job-info .div-text-info {
+  /* border: solid 1px; */
+  margin-left: 10px;
+}
+
+.card .job-info .div-text-info .company-info {
+  /* border: solid 1px; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+.card .job-info .div-text-info .job-position {
+  padding: 7px;
+}
+
+.card .job-info .div-text-info .company-info .company {
+  color: var(--prymary);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.card .job-info .div-text-info .company-info .new, .featured {
+  color: var(--LightGrayishCyan);
+  border-radius: 10px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.new {
+  background-color: var(--prymary);
+  margin: 0 10px;
+}
+
+.featured {
+  background-color: var(--VeryDarkGrayishCyan);
+}
+
+.card .job-info .div-text-info .job-description {
+  /* border: solid 1px; */
+  /* font-size: 0.8em; */
+  display: flex;
+  padding: 5px;
+  color: var(--DarkGrayishCyan);
+}
+
+.card .dev-competence {
+  /* border: solid 1px; */
+  display: flex;
+  align-items: center;
+}
+
+.card .dev-competence div {
+  background-color: rgb(215, 235, 241);
+  color: var(--prymary);
+  margin: 0 5px;
+  border-radius: 5px;
 }
